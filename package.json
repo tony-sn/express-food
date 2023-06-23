@@ -1,0 +1,27 @@
+{
+  "name": "express-exercise",
+  "version": "1.0.0",
+  "description": "An API project to send to Cybersoft",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/tony-sn/express-food"
+  },
+  "author": "Tony Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.4.0",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.32.1",
+    "sequelize-auto": "^0.8.8",
+    "sequelize-cli": "^6.6.1"
+  }
+}
