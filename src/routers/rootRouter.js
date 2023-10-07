@@ -1,9 +1,10 @@
-import express from 'express'
-import restaurantRouter from './restaurantRouter.js'
+import express from 'express';
+import restaurantRouter from './restaurantRouter.js';
+import userRouter from './userRouter.js';
 
-const rootRouter = express.Router()
+const rootRouter = express.Router();
 
-// endpoint for restaurant
-rootRouter.use("/express-food", restaurantRouter)
+rootRouter.use('/restaurants', restaurantRouter);
+rootRouter.use('/users', userRouter);
 
-export default rootRouter
+export default rootRouter;

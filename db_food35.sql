@@ -1,10 +1,10 @@
 -- -------------------------------------------------------------
--- TablePlus 5.3.8(500)
+-- TablePlus 5.4.2(506)
 --
 -- https://tableplus.com/
 --
--- Database: db_node32
--- Generation Time: 2023-06-28 01:02:19.4720
+-- Database: db_food35
+-- Generation Time: 2023-10-07 23:20:51.5240
 -- -------------------------------------------------------------
 
 
@@ -93,7 +93,7 @@ CREATE TABLE `tbl_order` (
   KEY `food_id` (`food_id`),
   CONSTRAINT `tbl_order_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`),
   CONSTRAINT `tbl_order_ibfk_2` FOREIGN KEY (`food_id`) REFERENCES `food` (`food_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `user` (
   `user_id` int NOT NULL AUTO_INCREMENT,
@@ -161,7 +161,8 @@ INSERT INTO `tbl_order` (`order_id`, `amount`, `code`, `arr_sub_id`, `user_id`, 
 (3, 3, 'ORD003', '4,5,6', 3, 4),
 (4, 2, 'ORD004', '2,3', 4, 3),
 (6, 2, 'ORD006', '4,5', 6, 4),
-(7, NULL, NULL, NULL, 1, NULL);
+(7, NULL, NULL, NULL, 1, NULL),
+(8, NULL, NULL, NULL, 1, NULL);
 
 INSERT INTO `user` (`user_id`, `full_name`, `email`, `password`) VALUES
 (1, 'Tony Nguyen', 'tony.sn@me.com', '1234abcd'),

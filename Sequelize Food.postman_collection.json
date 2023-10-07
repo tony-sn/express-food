@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "3e29979b-dadb-470e-befb-a928b84ccfd4",
+		"name": "Sequelize Food",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24217894",
+		"_collection_link": "https://www.postman.com/satellite-candidate-42961691/workspace/pinterest/collection/24217894-3e29979b-dadb-470e-befb-a928b84ccfd4?action=share&source=collection_link&creator=24217894"
+	},
+	"item": [
+		{
+			"name": "Restaurant",
+			"item": [
+				{
+					"name": "Get restaurant list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/restaurants",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"restaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a restaurant based on ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/restaurants/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"restaurants",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get likes from a restaurant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/restaurants/2/getRestaurantLikes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"restaurants",
+								"2",
+								"getRestaurantLikes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get unlikes from a restaurant Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/restaurants/1/getRestaurantUnlikes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"restaurants",
+								"1",
+								"getRestaurantUnlikes"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoint for Restaurant"
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get likes and unlikes for a user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/users/1/getLikesAndUnlikes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1",
+								"getLikesAndUnlikes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post a review for a user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"review\": \"more than good\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/users/2/postReview/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"2",
+								"postReview",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all reviews for an user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/users/2/getReviews",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"2",
+								"getReviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post an order for a user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user_id\": 1,\n\t\"food_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/users/1/postOrder",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1",
+								"postOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/{{food}}/users/1/orders/7/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"{{food}}",
+								"users",
+								"1",
+								"orders",
+								"7",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoint for User"
+		},
+		{
+			"name": "Test API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/{{food}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"{{food}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "localhost:8080"
+		}
+	]
+}
