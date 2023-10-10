@@ -165,17 +165,17 @@ INSERT INTO `tbl_order` (`order_id`, `amount`, `code`, `arr_sub_id`, `user_id`, 
 (8, NULL, NULL, NULL, 1, NULL);
 
 INSERT INTO `user` (`user_id`, `full_name`, `email`, `password`) VALUES
-(1, 'Tony Nguyen', 'tony.sn@me.com', '1234abcd'),
-(2, 'Nancy Nguyen', 'tungnhi1806@gmail.com', 'abcd1234'),
-(3, 'Alana Nguyen', 'alananguyen@gmail.com', '1234abcd@'),
+(1, 'Tony Nguyen', 'tony@me.com', '1234abcd'),
+(2, 'Nancy Nguyen', 'nhi@gmail.com', 'abcd1234'),
+(3, 'Alana Nguyen', 'alanan@gmail.com', '1234abcd@'),
 (4, 'Anabelle Caesar', 'anabelle@gmail.com', 'abcd123@'),
-(5, 'Albert Tran', 'atran@pingco.cloud', '123'),
-(6, 'Kiren Samuel', 'ksamuel@pingco.cloud', '456');
+(5, 'Albert Tran', 'atran@gmail.com', '123'),
+(6, 'Kiren Samuel', 'ksamuel@gmail.com', '456');
 
 INSERT INTO `Users` (`id`, `firstName`, `lastName`, `email`, `createdAt`, `updatedAt`) VALUES
 (1, 'John', 'Doe', 'example@example.com', '2023-06-16 10:06:19', '2023-06-16 10:06:19'),
-(2, 'Tony', 'Nguyen', 'tnguyen@pingco.cloud', '2023-06-16 10:06:19', '2023-06-16 10:06:19'),
-(3, 'Nancy', 'Nguyen', 'tungnhi1806@gmail.com', '2023-06-16 10:06:19', '2023-06-16 10:06:19');
+(2, 'Tony', 'Nguyen', 'tnguyen@gmail.com', '2023-06-16 10:06:19', '2023-06-16 10:06:19'),
+(3, 'Nancy', 'Nguyen', 'nhi@gmail.com', '2023-06-16 10:06:19', '2023-06-16 10:06:19');
 
 
 
